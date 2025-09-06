@@ -1,6 +1,4 @@
- # <img src="https://github.com/Geoxor/Amethyst/raw/master/assets/icon.png?raw=true" alt="Amethyst icon" height="28" width="28"> Amethyst 
- 
-
+# <img src="public/amethyst.svg" alt="Amethyst icon" height="32" width="32"> Amethyst
 
 <div>
     <a href="https://repology.org/project/amethyst-player/versions">
@@ -13,33 +11,23 @@
     </div>
 </div>
 
+Amethyst is an cross-platform audio player with a node-based audio routing system,
+customization and lots of other features.
 
-Amethyst is an cross-platform audio player with a [node-based](https://en.wikipedia.org/wiki/Node_graph_architecture) [audio routing](https://en.wikipedia.org/wiki/Audio_signal_flow) system, the main goal of this project is to make a [music player](https://en.wikipedia.org/wiki/Media_player_software) in [TypeScript](https://www.typescriptlang.org/) to see how far the language can be stretched to prove it's possible to provide pro-level features as most [DAWs](https://en.wikipedia.org/wiki/Digital_audio_workstation) / [DAEs](https://en.wikipedia.org/wiki/Audio_editing_software), while also providing useful tools and customizability to the [end-user](https://en.wikipedia.org/wiki/End_user).
+This branch is for a complete Rust rewrite of the original made in TypeScript and VueJS.
+Using [Rust](https://rust-lang.org), [Tauri](https://tauri.app) and [Sycamore](https://sycamore.dev),
+Amethyst will be much more performant and smaller, with better cross-platform support and with robust features.
+Another goal is to make Amethyst web-hostable, allowing for central managment of your music files and
+using it for a self-hosted streaming service, giving you control of everything. This however is completely optional.
 
-## [Download](https://amethyst.geoxor.moe/introduction)
+**The rewrite is currently in development**
 
-## Showcase
+## ⌨️ Development
 
-![image](https://github.com/user-attachments/assets/91798ae7-96b7-4986-8c3b-ca5d5b4cec7d)
+Amethyst will be mainly written in [Rust](https://rust-lang.org), so obviously familiarity with the language is recommended
+as well as an IDE with Rust support (possible built-in or via extension/plugin).
 
-![image](https://github.com/user-attachments/assets/e56e953d-7851-4722-b721-ec30e5630054)
-
-![image](https://github.com/user-attachments/assets/ea1dacbf-ab7e-4fda-af27-1db9e04d4e21)
-
-![image](https://github.com/user-attachments/assets/e926efff-0917-4364-8693-7fdee220dfd3)
-
-## 📝 Contributing
-
-NOTE: [nvm](https://github.com/nvm-sh/nvm) is suggested, so you can have multiple different versions of node.js installed simultaneously.
-
-- Use `Node.js v20.17.0`
-- Use the `recommended extensions`
-- Have `libvips` installed for linux
-- Have `yarn` installed
-
-## ⌨️ Coding
-
-- Install dependencies with `yarn`
-- Develop with `yarn dev`
-- Lint with `yarn lint`. Lint and Fix with `yarn lint:fix`
-- Compile with `yarn package`, compiled files will be in the `release/build` folder
+- [Rust](https://rust-lang.org/tools/install)
+- [Trunk](https://trunkrs.dev) via `cargo install --locked trunk`
+- [Tauri CLI] via `cargo install --locked tauri-cli`
+- [Tauri Setup](https://tauri.app/start/prerequisites)
